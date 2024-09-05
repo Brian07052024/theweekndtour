@@ -1,0 +1,19 @@
+@use "base/variables" as *;
+@use "base/mixins" as m;
+
+
+
+.footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    p{
+        display: block;
+        margin: 0;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding: 2rem;
+        background-color: $RojoP;
+        color: $amarillo;
+    }
+}

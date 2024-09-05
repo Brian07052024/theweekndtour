@@ -1,0 +1,36 @@
+@use "base/variables" as *;
+@use "base/mixins" as m;
+
+.video{
+    position: relative; //siempre el padre tiene que ser relativo
+    overflow: hidden;
+    .overlay{
+        display: flex;
+        position: absolute;
+        inset: 0;
+        background-color: rgba($negro, 45%);
+        align-items: center;
+        color: $blanco;
+    }
+
+    video{
+        display: block;
+        height: 100%;
+        @include m.tablet{
+            width: 100%;
+        }
+
+    }
+}
+
+.contenido-video{
+    z-index: 999;
+    p{
+        font-weight: bold;
+        color: $blanco;
+        width: max-content;
+        padding: 1rem;
+        background-color: $RojoP;
+    }
+}
+

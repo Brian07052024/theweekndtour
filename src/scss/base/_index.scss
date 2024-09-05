@@ -1,0 +1,8 @@
+@use "variables" as * ;//use para cuando queremos usar alguina funcion o variable
+@forward "normalize"; //forward para cuando extraemos tdo el contenido
+// con el "as *" evito ponerle el name space, por ejemplo, 
+//en lugar de abajo poner "variables.font-family: $fuente_principal;
+//le quitamos el variables. porq ya se lo indicamos con as *
+//visita el archivo _variables.scss para que veas como es que se agre
+//-gan las variables
+@forward "globales"
